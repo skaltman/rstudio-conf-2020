@@ -167,6 +167,7 @@ class: center, middle
 knitr::include_graphics("images/feedback-1.png")
 ```
 
+--
 
 ---
 
@@ -176,6 +177,8 @@ knitr::include_graphics("images/feedback-1.png")
 knitr::include_graphics("images/feedback-2.png")
 ```
 
+--
+
 ---
 
 # We also use the entire quarter's feedback to improve the class for the next offering.
@@ -183,6 +186,8 @@ knitr::include_graphics("images/feedback-2.png")
 ```{r echo=FALSE, out.width='70%', fig.align='center'}
 knitr::include_graphics("images/feedback-3.png")
 ```
+
+--
 
 ---
 
@@ -217,7 +222,7 @@ knitr::include_graphics("images/curriculum.png")
 .pull-left[
 
 ```{r echo=FALSE}
-knitr::include_graphics("images/open-content.png")
+knitr::include_graphics("images/dcl-docs.png")
 ```
 
 
