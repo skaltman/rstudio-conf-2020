@@ -151,7 +151,7 @@ class: center, middle
 
 # DCL students provide (daily!) feedback on all course materials
 
-```{r echo=FALSE, out.width='80%'}
+```{r echo=FALSE, out.width='70%', fig.align='center'}
 knitr::include_graphics("images/feedback-1.png")
 ```
 
@@ -160,7 +160,7 @@ knitr::include_graphics("images/feedback-1.png")
 
 # We monitor that feedback to adjust the class in real time.
 
-```{r echo=FALSE, out.width='70%'}
+```{r echo=FALSE, out.width='70%', fig.align='center'}
 knitr::include_graphics("images/feedback-2.png")
 ```
 
@@ -168,7 +168,7 @@ knitr::include_graphics("images/feedback-2.png")
 
 # We also use the entire quarter's feedback to improve the class for the next offering.
 
-```{r echo=FALSE, out.width='80%'}
+```{r echo=FALSE, out.width='70%', fig.align='center'}
 knitr::include_graphics("images/feedback-3.png")
 ```
 
