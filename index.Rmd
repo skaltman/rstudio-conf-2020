@@ -109,7 +109,7 @@ For the Poor, Geography Matters](https://www.nytimes.com/interactive/2016/04/11/
 
 --
 
-```{r echo=FALSE, include=FALSE}
+```{r echo=FALSE, eval=FALSE}
 gm_combined_paired <-
   dcldata::gm_combined %>% 
   filter(year %in% c(2010, 2015)) %>% 
@@ -144,8 +144,6 @@ gm_combined_paired %>%
     color = "Region",
     caption = "Source: Gapminder"
   )
-
-ggsave("images/life-expectancy.png")
 ```
 
 ```{r echo=FALSE}
