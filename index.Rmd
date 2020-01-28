@@ -6,6 +6,8 @@ output:
   xaringan::moon_reader:
     css: ["sara.css", "sara-font.css", "ninjutsu"]
     lib_dir: libs
+    includes:
+      in_header: repeatSlides.html
     nature: 
       ratio: 16:9
       autoplay: 4000
@@ -306,5 +308,6 @@ class: middle
 ## Open content: [dcl-docs.stanford.edu](dcl-docs.stanford.edu)
 
 ### Thanks to Bill Behrman and all DCL students 
+
 
 
