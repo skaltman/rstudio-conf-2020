@@ -302,7 +302,8 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();</script>
+})();
+setInterval(function() {slideshow.gotoNextSlide();}, 4000);</script>
 
 <script>
 (function() {

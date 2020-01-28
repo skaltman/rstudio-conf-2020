@@ -8,6 +8,7 @@ output:
     lib_dir: libs
     nature: 
       ratio: 16:9
+      autoplay: 4000
     seal: false
 ---
 class: middle, title
