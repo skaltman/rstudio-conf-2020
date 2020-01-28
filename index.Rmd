@@ -90,6 +90,12 @@ class: center, middle
 knitr::include_graphics("images/health-inequality-map.png")
 ```
 
+.pull-right[
+
+.footnote[Image source: Neil Irwin and Quoctrung Bui. [The Rich Live Longer Everywhere.
+For the Poor, Geography Matters](https://www.nytimes.com/interactive/2016/04/11/upshot/for-the-poor-geography-is-life-and-death.html). April 11, 2016. The New York Times.]
+
+]
 
 ---
 
