@@ -1,5 +1,5 @@
 a, a > code {
-  color: rgb(249, 38, 114);
+  color: #2171B5;
   text-decoration: none;
 }
 .footnote {
@@ -9,6 +9,18 @@ a, a > code {
   font-size: 90%;
 }
 .remark-code-line-highlighted     { background-color: #ffff88; }
+
+.title {
+  background-color: #f2f0f7;
+}
+
+.title h1 {
+  font-size: 500%;
+}
+
+.title a {
+  color: #08589e;
+}
 
 .inverse {
   background-color: #FFFFFF;
