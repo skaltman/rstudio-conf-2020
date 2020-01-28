@@ -9,7 +9,7 @@
     // Adapted from https://github.com/gnab/remark/wiki/Configuration#using-javascript-to-create-a-continuously-looping-slideshow
     // every 8 seconds (change to your desired interval), fire the helper function
     document.addEventListener("DOMContentLoaded", function() {
-      setInterval(function () {carousel(slideshow)}, 8000);
+      setInterval(function () {carousel(slideshow)}, 4000);
     
       function carousel(varObject) {
       	var slideCount = varObject.getSlideCount()-1;
@@ -35,6 +35,10 @@ class: middle, title
 
 ## Slides: [http://skaltman.github.io/rstudio-conf-2020](http://skaltman.github.io/rstudio-conf-2020)
 ## Open materials: [dcl-docs.stanford.edu](dcl-docs.stanford.edu)
+
+--
+
+--
 ---
 class: center, middle
 
@@ -105,6 +109,8 @@ For the Poor, Geography Matters](https://www.nytimes.com/interactive/2016/04/11/
 
 ]
 
+--
+
 ---
 
 ## Students explore voter behavior in the 2016 election, global migration patterns, and the opioid epidemic (among many other topics).
@@ -112,8 +118,6 @@ For the Poor, Geography Matters](https://www.nytimes.com/interactive/2016/04/11/
 --
 
 
-
---
 
 &lt;img src="images/life-expectancy-with-label.png" width="9465" /&gt;
 
@@ -226,7 +230,7 @@ ussf::boundaries(geography = "state") %&gt;%
 # Encourage good workflow habits with a function
 
 ## dcl package: https://github.com/stanford-datalab/dcl
-### Create a project from a template repository, or use our default
+### `dcl::create_data_project()` creates a project from a template. You can use our template, or pass in your own.
 
 .pull-left[
 
@@ -241,7 +245,7 @@ dcl::create_data_project(
 
 .pull-right[
 
-&lt;img src="images/create_data_project.png" width="55%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/create_data_project.png" width="40%" style="display: block; margin: auto;" /&gt;
 
 ]
 
@@ -251,24 +255,21 @@ dcl::create_data_project(
 
 ## dcldata package: https://github.com/dcl-docs/dcldata
 
-### All datasets from our books are collected in dcldata, so students can easily the run code themselves.
+### dcldata collects all datasets from our books, so students can easily the run code themselves.
 
 
 ```r
 dcldata::congress %&gt;% 
-  head()
+  head(3)
 ```
 
 ```
-## # A tibble: 6 x 7
-##   name            state division           chamber party        age gender
-##   &lt;chr&gt;           &lt;chr&gt; &lt;chr&gt;              &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt; 
-## 1 Don Young       AK    Pacific            House   Republican  85.6 M     
-## 2 Lisa Murkowski  AK    Pacific            Senate  Republican  61.6 F     
-## 3 Dan Sullivan    AK    Pacific            Senate  Republican  54.2 M     
-## 4 Terri Sewell    AL    East South Central House   Democrat    54.0 F     
-## 5 Robert Aderholt AL    East South Central House   Republican  53.5 M     
-## 6 Mo Brooks       AL    East South Central House   Republican  64.7 M
+## # A tibble: 3 x 7
+##   name           state division chamber party        age gender
+##   &lt;chr&gt;          &lt;chr&gt; &lt;chr&gt;    &lt;chr&gt;   &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt; 
+## 1 Don Young      AK    Pacific  House   Republican  85.6 M     
+## 2 Lisa Murkowski AK    Pacific  Senate  Republican  61.6 F     
+## 3 Dan Sullivan   AK    Pacific  Senate  Republican  54.2 M
 ```
 
 
@@ -280,12 +281,15 @@ class: middle
 ## Slides: [skaltman.github.io/rstudio-conf-2020](http://skaltman.github.io/rstudio-conf-2020)
 ## Open content: [dcl-docs.stanford.edu](dcl-docs.stanford.edu)
 
-### Thanks to Bill Behrman and all DCL students
+### Thanks to Bill Behrman and all DCL students 
+
+--
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"ratio": "16:9"
+"ratio": "16:9",
+"countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
@@ -325,8 +329,7 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();
-setInterval(function() {slideshow.gotoNextSlide();}, 4000);</script>
+})();</script>
 
 <script>
 (function() {

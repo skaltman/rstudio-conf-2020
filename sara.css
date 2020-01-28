@@ -2,6 +2,11 @@ a, a > code {
   color: #2171B5;
   text-decoration: none;
 }
+
+h1, h2, h3 {
+  padding-left: 0;
+}
+
 .footnote {
   position: absolute;
   bottom: 3em;
