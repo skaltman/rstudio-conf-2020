@@ -28,13 +28,12 @@
   <body>
     <textarea id="source">
 
-class: middle, title
+class: middle, title, hide-logo
 
 # Using R to teach R
-## Sara Altman
-
-## Slides: [http://skaltman.github.io/rstudio-conf-2020](http://skaltman.github.io/rstudio-conf-2020)
-## Open materials: [dcl-docs.stanford.edu](dcl-docs.stanford.edu)
+## Sara Altman 
+## [@sarakaltman](https://twitter.com/sarakaltman)
+## [http://skaltman.github.io/rstudio-conf-2020](http://skaltman.github.io/rstudio-conf-2020)
 
 --
 
@@ -68,7 +67,7 @@ class: center, middle
 
 --
 
-## Centered around the tidyverse, data visualization, and exploratory data analysis. 
+## Centered around the tidyverse, data visualization, and exploratory data analysis. 📉
 
 ---
 class: center, middle
@@ -88,11 +87,6 @@ class: center, middle
 ## Students spend class time working on assignments and projects, asking questions, and reviewing feedback.
 
 ---
-class: center, middle
-
-# What kinds of projects?
-
----
 
 ### We try to create assignments that simulate real work.
 
@@ -104,9 +98,9 @@ class: center, middle
 
 .pull-right[
 
-.footnote[Image source: Neil Irwin and Quoctrung Bui. [The Rich Live Longer Everywhere.
+.footnote[
+Image source: Neil Irwin and Quoctrung Bui. [The Rich Live Longer Everywhere.
 For the Poor, Geography Matters](https://www.nytimes.com/interactive/2016/04/11/upshot/for-the-poor-geography-is-life-and-death.html). April 11, 2016. The New York Times.]
-
 ]
 
 --
@@ -277,16 +271,16 @@ dcldata::congress %&gt;%
 ## 3 Dan Sullivan   AK    Pacific  Senate  Republican  54.2 M
 ```
 
-
 ---
-class: middle
+class: middle, hide-logo
 
 # Using R to teach R
-## Sara Altman
+## Sara Altman [@sarakaltman](https://twitter.com/sarakaltman)
 ## Slides: [skaltman.github.io/rstudio-conf-2020](http://skaltman.github.io/rstudio-conf-2020)
 ## Open content: [dcl-docs.stanford.edu](dcl-docs.stanford.edu)
 
-### Thanks to Bill Behrman and all DCL students 
+### Thanks to Bill Behrman and all DCL students!
+
 
 --
     </textarea>
@@ -335,6 +329,33 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();</script>
+<style>
+.logo {
+  background-image: url(logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  width: 220px;
+  height: 50px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
 
 <script>
 (function() {

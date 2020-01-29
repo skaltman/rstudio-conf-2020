@@ -3,6 +3,13 @@ a, a > code {
   text-decoration: none;
 }
 
+.slideshow-name {
+  position: absolute;
+  bottom: 1em;
+  font-size: 90%;
+  text-align: left;
+}
+
 h1, h2, h3 {
   padding-left: 0;
 }
